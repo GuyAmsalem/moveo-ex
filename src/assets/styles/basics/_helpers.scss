@@ -1,0 +1,51 @@
+
+.center-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .save-btn {
+    font-family: $font-semi;
+    padding: 7px 18px;
+    color: $clr5;
+    text-decoration: none;
+    background-color: $pGreen;
+    border-radius: 3px;
+  }
+
+  .save-btn:hover {
+    background-color: lighten( $pGreen, 10)
+  }
+
+  label.search-input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 6px 12px;
+
+    svg{
+      position: absolute;
+      right: 5px;
+      font-size: 18px
+    }
+
+    input{
+      padding-right: 30px;
+      border: 0;
+      outline: 0;
+    }
+  }
+
+// Aspect ratios
+
+.ratio-16-9 { @include aspect-ratio(100, 56); }
+
+.ratio-square { @include aspect-ratio(100, 100); }
+
+.ratio-card { @include aspect-ratio(100, 80); }
+
+.ratio-poster { @include aspect-ratio(100, 150); }

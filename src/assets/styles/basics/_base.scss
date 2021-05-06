@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: OpenSans-Regular, sans-serif;
+    color: $clr1;
+}
+
+body {
+    margin: 0 10px;
+    height: 100%;
+    background-color: #fafbfc;
+    overflow-x: hidden;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+ul ,li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: $clr1;
+    cursor: pointer;
+    outline: 0;
+}
